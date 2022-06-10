@@ -12,6 +12,7 @@
 		9AEE804E285358CA0063A24C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AEE804D285358CA0063A24C /* Assets.xcassets */; };
 		9AEE8051285358CA0063A24C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AEE804F285358CA0063A24C /* LaunchScreen.storyboard */; };
 		9AEE806328536EAB0063A24C /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 9AEE806228536EAB0063A24C /* Networking */; };
+		9AEE806628537BE70063A24C /* ImageLoading in Frameworks */ = {isa = PBXBuildFile; productRef = 9AEE806528537BE70063A24C /* ImageLoading */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		9AEE8050285358CA0063A24C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9AEE8052285358CA0063A24C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AEE806128536E5C0063A24C /* Networking */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Networking; path = ../Networking; sourceTree = "<group>"; };
+		9AEE806428537B910063A24C /* ImageLoading */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ImageLoading; path = ../ImageLoading; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +32,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AEE806328536EAB0063A24C /* Networking in Frameworks */,
+				9AEE806628537BE70063A24C /* ImageLoading in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				9AEE806128536E5C0063A24C /* Networking */,
+				9AEE806428537B910063A24C /* ImageLoading */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -111,11 +115,13 @@
 			buildRules = (
 			);
 			dependencies = (
+				9AEE806828537BF00063A24C /* PBXTargetDependency */,
 				9AEE80602853618F0063A24C /* PBXTargetDependency */,
 			);
 			name = flickrgram;
 			packageProductDependencies = (
 				9AEE806228536EAB0063A24C /* Networking */,
+				9AEE806528537BE70063A24C /* ImageLoading */,
 			);
 			productName = flickrgram;
 			productReference = 9AEE8041285358C90063A24C /* flickrgram.app */;
@@ -182,6 +188,10 @@
 		9AEE80602853618F0063A24C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			productRef = 9AEE805F2853618F0063A24C /* Networking */;
+		};
+		9AEE806828537BF00063A24C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 9AEE806728537BF00063A24C /* ImageLoading */;
 		};
 /* End PBXTargetDependency section */
 
@@ -396,6 +406,14 @@
 		9AEE806228536EAB0063A24C /* Networking */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Networking;
+		};
+		9AEE806528537BE70063A24C /* ImageLoading */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ImageLoading;
+		};
+		9AEE806728537BF00063A24C /* ImageLoading */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ImageLoading;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
