@@ -11,6 +11,7 @@
 		9AEE8047285358C90063A24C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE8046285358C90063A24C /* SceneDelegate.swift */; };
 		9AEE804E285358CA0063A24C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AEE804D285358CA0063A24C /* Assets.xcassets */; };
 		9AEE8051285358CA0063A24C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AEE804F285358CA0063A24C /* LaunchScreen.storyboard */; };
+		9AEE806328536EAB0063A24C /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 9AEE806228536EAB0063A24C /* Networking */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		9AEE804D285358CA0063A24C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AEE8050285358CA0063A24C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9AEE8052285358CA0063A24C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AEE806128536E5C0063A24C /* Networking */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Networking; path = ../Networking; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AEE806328536EAB0063A24C /* Networking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,8 +39,10 @@
 		9AEE8038285358C90063A24C = {
 			isa = PBXGroup;
 			children = (
+				9AEE805A285361780063A24C /* Packages */,
 				9AEE8043285358C90063A24C /* flickrgram */,
 				9AEE8042285358C90063A24C /* Products */,
+				9AEE805C285361870063A24C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +82,21 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		9AEE805A285361780063A24C /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				9AEE806128536E5C0063A24C /* Networking */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		9AEE805C285361870063A24C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,8 +111,12 @@
 			buildRules = (
 			);
 			dependencies = (
+				9AEE80602853618F0063A24C /* PBXTargetDependency */,
 			);
 			name = flickrgram;
+			packageProductDependencies = (
+				9AEE806228536EAB0063A24C /* Networking */,
+			);
 			productName = flickrgram;
 			productReference = 9AEE8041285358C90063A24C /* flickrgram.app */;
 			productType = "com.apple.product-type.application";
@@ -153,6 +177,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9AEE80602853618F0063A24C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 9AEE805F2853618F0063A24C /* Networking */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9AEE804F285358CA0063A24C /* LaunchScreen.storyboard */ = {
@@ -356,6 +387,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9AEE805F2853618F0063A24C /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
+		};
+		9AEE806228536EAB0063A24C /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9AEE8039285358C90063A24C /* Project object */;
 }
