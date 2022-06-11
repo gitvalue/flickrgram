@@ -8,6 +8,16 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         willConnectTo session: UISceneSession,
         options connectionOptions: UIScene.ConnectionOptions
     ) {
-        guard let _ = scene as? UIWindowScene else { return }
+        guard let windowScene = scene as? UIWindowScene else { return }
+        
+        window = UIWindow(windowScene: windowScene)
+        
+        let factory = SearchResultsFactory()
+        let navigationController = UINavigationController()
+        let searchResultsViewController = factory.create(withNavigationController: navigationController)
+        navigationController.viewControllers = [searchResultsViewController]
+        
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
     }
 }
