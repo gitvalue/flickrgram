@@ -19,15 +19,15 @@ final class SearchViewModel {
     private let onCompletion: (String) -> ()
     
     /// Designated initializer
-    /// - Parameter queriesLogger: Queries logger service
+    /// - Parameter recorder: Queries history recording service
     /// - Parameter router: Navigation manager
     /// - Parameter onCompletion: Query entering completion handler
     init(
-        queriesLogger: SearchHistoryRecording,
+        recorder: SearchHistoryRecording,
         router: SearchRouting,
         onCompletion: @escaping (String) -> ()
     ) {
-        self.recorder = queriesLogger
+        self.recorder = recorder
         self.router = router
         self.onCompletion = onCompletion
     }
