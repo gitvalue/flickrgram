@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9AB70A7F2854D38800ED2CE9 /* SearchHistoryRecording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB70A742854D38800ED2CE9 /* SearchHistoryRecording.swift */; };
+		9AB70A802854D38800ED2CE9 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB70A752854D38800ED2CE9 /* SearchViewModel.swift */; };
+		9AB70A812854D38800ED2CE9 /* SearchHistoryRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB70A762854D38800ED2CE9 /* SearchHistoryRecorder.swift */; };
+		9AB70A822854D38800ED2CE9 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB70A782854D38800ED2CE9 /* SearchViewController.swift */; };
+		9AB70A832854D38800ED2CE9 /* SearchHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB70A792854D38800ED2CE9 /* SearchHistoryCell.swift */; };
+		9AB70A842854D38800ED2CE9 /* SearchFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB70A7B2854D38800ED2CE9 /* SearchFactory.swift */; };
+		9AB70A852854D38800ED2CE9 /* SearchRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB70A7D2854D38800ED2CE9 /* SearchRouting.swift */; };
+		9AB70A862854D38800ED2CE9 /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB70A7E2854D38800ED2CE9 /* SearchRouter.swift */; };
+		9AB70A892854D60300ED2CE9 /* SearchHistoryRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB70A882854D60300ED2CE9 /* SearchHistoryRecord.swift */; };
 		9AEE8045285358C90063A24C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE8044285358C90063A24C /* AppDelegate.swift */; };
 		9AEE8047285358C90063A24C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE8046285358C90063A24C /* SceneDelegate.swift */; };
 		9AEE804E285358CA0063A24C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AEE804D285358CA0063A24C /* Assets.xcassets */; };
@@ -30,6 +39,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9AB70A742854D38800ED2CE9 /* SearchHistoryRecording.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchHistoryRecording.swift; sourceTree = "<group>"; };
+		9AB70A752854D38800ED2CE9 /* SearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		9AB70A762854D38800ED2CE9 /* SearchHistoryRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchHistoryRecorder.swift; sourceTree = "<group>"; };
+		9AB70A782854D38800ED2CE9 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		9AB70A792854D38800ED2CE9 /* SearchHistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchHistoryCell.swift; sourceTree = "<group>"; };
+		9AB70A7B2854D38800ED2CE9 /* SearchFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchFactory.swift; sourceTree = "<group>"; };
+		9AB70A7D2854D38800ED2CE9 /* SearchRouting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchRouting.swift; sourceTree = "<group>"; };
+		9AB70A7E2854D38800ED2CE9 /* SearchRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchRouter.swift; sourceTree = "<group>"; };
+		9AB70A882854D60300ED2CE9 /* SearchHistoryRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryRecord.swift; sourceTree = "<group>"; };
 		9AEE8041285358C90063A24C /* flickrgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flickrgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AEE8044285358C90063A24C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AEE8046285358C90063A24C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +85,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9AB70A722854D38800ED2CE9 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				9AB70A7A2854D38800ED2CE9 /* Factory */,
+				9AB70A872854D5F000ED2CE9 /* Model */,
+				9AB70A7C2854D38800ED2CE9 /* Router */,
+				9AB70A772854D38800ED2CE9 /* View */,
+				9AB70A732854D38800ED2CE9 /* ViewModel */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		9AB70A732854D38800ED2CE9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9AB70A762854D38800ED2CE9 /* SearchHistoryRecorder.swift */,
+				9AB70A742854D38800ED2CE9 /* SearchHistoryRecording.swift */,
+				9AB70A752854D38800ED2CE9 /* SearchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9AB70A772854D38800ED2CE9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9AB70A792854D38800ED2CE9 /* SearchHistoryCell.swift */,
+				9AB70A782854D38800ED2CE9 /* SearchViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9AB70A7A2854D38800ED2CE9 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				9AB70A7B2854D38800ED2CE9 /* SearchFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		9AB70A7C2854D38800ED2CE9 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9AB70A7E2854D38800ED2CE9 /* SearchRouter.swift */,
+				9AB70A7D2854D38800ED2CE9 /* SearchRouting.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		9AB70A872854D5F000ED2CE9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9AB70A882854D60300ED2CE9 /* SearchHistoryRecord.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		9AEE8038285358C90063A24C = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +208,7 @@
 		9AEE806B28537D5A0063A24C /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				9AB70A722854D38800ED2CE9 /* Search */,
 				9AEE80A028537DB20063A24C /* SearchResults */,
 			);
 			path = Screens;
@@ -312,14 +387,23 @@
 				9AEE80C528537E940063A24C /* UIView+ReuseIdentifier.swift in Sources */,
 				9AEE8045285358C90063A24C /* AppDelegate.swift in Sources */,
 				9AEE80B828537DB20063A24C /* SearchResultsCell.swift in Sources */,
+				9AB70A832854D38800ED2CE9 /* SearchHistoryCell.swift in Sources */,
+				9AB70A842854D38800ED2CE9 /* SearchFactory.swift in Sources */,
 				9AEE80B628537DB20063A24C /* SearchResultPresentable.swift in Sources */,
+				9AB70A802854D38800ED2CE9 /* SearchViewModel.swift in Sources */,
 				9AEE80BE28537DB20063A24C /* SearchResultsRouter.swift in Sources */,
 				9AEE80B928537DB20063A24C /* SearchResultsService.swift in Sources */,
+				9AB70A852854D38800ED2CE9 /* SearchRouting.swift in Sources */,
+				9AB70A862854D38800ED2CE9 /* SearchRouter.swift in Sources */,
 				9AEE80B728537DB20063A24C /* SearchResultsPlaceholderView.swift in Sources */,
+				9AB70A822854D38800ED2CE9 /* SearchViewController.swift in Sources */,
 				9AEE80BD28537DB20063A24C /* SearchResultsRouting.swift in Sources */,
+				9AB70A812854D38800ED2CE9 /* SearchHistoryRecorder.swift in Sources */,
+				9AB70A7F2854D38800ED2CE9 /* SearchHistoryRecording.swift in Sources */,
 				9AEE8047285358C90063A24C /* SceneDelegate.swift in Sources */,
 				9AEE80C428537E940063A24C /* ObservablePropertyWrapper.swift in Sources */,
 				9AEE80BB28537DB20063A24C /* SearchResultsRequesting.swift in Sources */,
+				9AB70A892854D60300ED2CE9 /* SearchHistoryRecord.swift in Sources */,
 				9AEE80B328537DB20063A24C /* SearchResultsViewModel.swift in Sources */,
 				9AEE80BA28537DB20063A24C /* FlickrSearchRequest.swift in Sources */,
 				9AEE80B528537DB20063A24C /* SearchResultsViewController.swift in Sources */,
