@@ -11,6 +11,13 @@ final class SearchResultsRouter: SearchResultsRouting {
     }
     
     func showSearch(_ onCompletion: @escaping (String) -> ()) {
+        guard let rootViewController = rootViewController else { return }
 
+        let factory = SearchFactory()
+        let viewController = factory.create(
+            withNavigationController: rootViewController,
+            onCompletion: onCompletion
+        )
+        rootViewController.pushViewController(viewController, animated: false)
     }
 }
