@@ -1,0 +1,12 @@
+sources:
+  - flickrgram
+  - ../ImageLoading/Sources
+templates:
+  - ../Sourcery/Templates/AutoMockable.stencil
+output:
+  flickrgramTests/AutoMockable.generated.swift
+args:
+  autoMockableImports:
+    - ImageLoading
+  autoMockableTestableImports:
+    - flickrgram 

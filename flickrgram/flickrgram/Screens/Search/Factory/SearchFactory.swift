@@ -9,9 +9,9 @@ final class SearchFactory {
         withNavigationController navigationController: UINavigationController,
         onCompletion: @escaping (String) -> ()
     ) -> UIViewController {
-        let queriesLogger = SearchHistoryRecorder()
+        let queriesHistoryRecorder = SearchHistoryRecorder()
         let router = SearchRouter(rootViewController: navigationController)
-        let viewModel = SearchViewModel(queriesLogger: queriesLogger, router: router, onCompletion: onCompletion)
+        let viewModel = SearchViewModel(recorder: queriesHistoryRecorder, router: router, onCompletion: onCompletion)
         let viewController = SearchViewController(viewModel: viewModel)
         
         return viewController
